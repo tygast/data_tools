@@ -1,0 +1,720 @@
+[Location_A]
+    name = 'Location_A'
+    trucked = 'NO'
+    [[Location_A.connection_args]]
+    type = 'DATABASE_A'
+    which = 'connection_1'
+    [[Location_A.location]]
+    designation = 'UPPER'
+    area = 'Unit 1'
+    [[Location_A.containment_alarm]]
+    name = 'containment_alarm'
+    tags = ['connection_1.vxy.12345.containment_alarm']
+    usage_function = false
+    units = false
+    [[Location_A.harmful_gas_sensor]]
+    name = 'harmful_gas_sensor'
+    tags = ['connection_1.vxy.12345.harmful_gas_sensor']
+    usage_function = false
+    units = false
+    [[Location_A.inlet_flowrate]]
+    name = 'inlet'
+    dash_name = ['Inlet 1', 'Inlet 2']
+    tags =  ['connection_1.vxy.12345:inlet_1_flowrate','connection_1.vxy.00472206:inlet_2_flowrate']
+    usage_function = 'flow_based' 
+    units = 'scfm'
+    [[Location_A.inlet_pressure]]
+    name = ['Inlet 1', 'Inlet 2']
+    tags = ['connection_1.vxy.12345:inlet_1_pressure','connection_1.vxy.00471915:inlet_2_pressure']
+    usage_function = false 
+    units = 'psig'
+    [[Location_A.fuel_flowrate]]
+    name = 'fuel'
+    tags = ['connection_1.vxy.12345:fuel_flowrate']
+    usage_function = 'flow_based' 
+    units = 'scfm'
+    [[Location_A.discharge_flowrate]]
+    name = 'discharge'
+    tags = ['connection_1.vxy.12345:discharge_flowrate']
+    usage_function = 'flow_based' 
+    units = 'scfm'
+    [[Location_A.liquid_product_flowrate]]
+    name = 'liquid_product_flowrate'
+    tags = ['connection_1.vxy.12345:liquid_product_flowrate']
+    usage_function = 'flow_based' 
+    units = 'gpm'
+    [[Location_A.product_tank_vol]]
+    name = 'product_tank_vol'
+    tags = ['connection_1.vxy.12345:product_tank_1_vol', 'connection_1.vxy.12345:product_tank_2_vol']
+    usage_function = 'level_based' 
+    units = 'gal'
+    [[Location_A.water_tank_vol]]
+    name = 'water_tank_vol'
+    tags = ['connection_1.vxy.12345:water_tank_1_vol', 'connection_1.vxy.12345:water_tank_2_vol']
+    usage_function = 'level_based' 
+    units = 'gal'
+    [[Location_A.chemical_a]]
+    name = 'chemical_a'
+    tags = ['connection_1.vxy.12345:chemical_a_tank_1', 'connection_1.vxy.12345:chemical_a_tank_2']
+    usage_function = 'level_based'
+    units = 'gal' 
+    [[Location_A.chemical_b]]
+    name = 'chemical_b'
+    tags = ['connection_1.vxy.12345:chemical_b_tank_1', 'connection_1.vxy.12345:chemical_b_tank_2']
+    usage_function = 'level_based'
+    units = 'gal' 
+    [[Location_A.chemical_c]]
+    name = 'chemical_c'
+    tags = ['connection_1.vxy.12345:chemical_c_tank_1']
+    usage_function = 'level_based'
+    units = 'gal' 
+    [[Location_A.chemical_d]]
+    name = 'chemical_d'
+    tags = ['connection_1.vxy.12345:chemical_d_tank_1']
+    usage_function = 'level_based'
+    units = 'gal' 
+    [[Location_A.chemical_e]]
+    name = 'chemical_e'
+    tags = ['connection_1.vxy.12345:chemical_e_tank_1']
+    usage_function = 'level_based'
+    units = 'gal' 
+[Location_B]
+    name = 'Location_B'
+    trucked = 'NO'
+    [[Location_B.connection_args]]
+    type = 'DATABASE_A'
+    which = 'connection_1'
+    [[Location_B.location]]
+    designation = 'UPPER'
+    area = 'Unit 5'
+    [[Location_B.containment_alarm]]
+    name = 'containment_alarm'
+    tags = ['connection_1.vxy.12345.containment_alarm']
+    usage_function = false
+    units = false
+    [[Location_B.harmful_gas_sensor]]
+    name = 'harmful_gas_sensor'
+    tags = ['connection_1.vxy.12345.harmful_gas_sensor']
+    usage_function = false
+    units = false
+    [[Location_B.inlet_flowrate]]
+    name = 'inlet'
+    dash_name = ['Inlet 1', 'Inlet 2']
+    tags =  ['connection_1.vxy.12345:inlet_1_flowrate','connection_1.vxy.00472206:inlet_2_flowrate']
+    usage_function = 'flow_based' 
+    units = 'scfm'
+    [[Location_B.inlet_pressure]]
+    name = ['Inlet 1', 'Inlet 2']
+    tags = ['connection_1.vxy.12345:inlet_1_pressure','connection_1.vxy.00471915:inlet_2_pressure']
+    usage_function = false 
+    units = 'psig'
+    [[Location_B.fuel_flowrate]]
+    name = 'fuel'
+    tags = ['connection_1.vxy.12345:fuel_flowrate']
+    usage_function = 'flow_based' 
+    units = 'scfm'
+    [[Location_B.discharge_flowrate]]
+    name = 'discharge'
+    tags = ['connection_1.vxy.12345:discharge_flowrate']
+    usage_function = 'flow_based' 
+    units = 'scfm'
+    [[Location_B.liquid_product_flowrate]]
+    name = 'liquid_product_flowrate'
+    tags = ['connection_1.vxy.12345:liquid_product_flowrate']
+    usage_function = 'flow_based' 
+    units = 'gpm'
+    [[Location_B.product_tank_vol]]
+    name = 'product_tank_vol'
+    tags = ['connection_1.vxy.12345:product_tank_1_vol', 'connection_1.vxy.12345:product_tank_2_vol']
+    usage_function = 'level_based' 
+    units = 'gal'
+    [[Location_B.water_tank_vol]]
+    name = 'water_tank_vol'
+    tags = ['connection_1.vxy.12345:water_tank_1_vol', 'connection_1.vxy.12345:water_tank_2_vol']
+    usage_function = 'level_based' 
+    units = 'gal'
+    [[Location_B.chemical_a]]
+    name = 'chemical_a'
+    tags = ['connection_1.vxy.12345:chemical_a_tank_1', 'connection_1.vxy.12345:chemical_a_tank_2']
+    usage_function = 'level_based'
+    units = 'gal' 
+    [[Location_B.chemical_b]]
+    name = 'chemical_b'
+    tags = ['connection_1.vxy.12345:chemical_b_tank_1', 'connection_1.vxy.12345:chemical_b_tank_2']
+    usage_function = 'level_based'
+    units = 'gal' 
+    [[Location_B.chemical_c]]
+    name = 'chemical_c'
+    tags = ['connection_1.vxy.12345:chemical_c_tank_1']
+    usage_function = 'level_based'
+    units = 'gal' 
+    [[Location_B.chemical_d]]
+    name = 'chemical_d'
+    tags = ['connection_1.vxy.12345:chemical_d_tank_1']
+    usage_function = 'level_based'
+    units = 'gal' 
+    [[Location_B.chemical_e]]
+    name = 'chemical_e'
+    tags = ['connection_1.vxy.12345:chemical_e_tank_1']
+    usage_function = 'level_based'
+    units = 'gal' 
+[Location_C]
+    name = 'Location_C'
+    trucked = 'NO'
+    [[Location_C.connection_args]]
+    type = 'DATABASE_A'
+    which = 'connection_1'
+    [[Location_C.location]]
+    designation = 'LOWER'
+    area = 'Unit 2'
+    [[Location_C.containment_alarm]]
+    name = 'containment_alarm'
+    tags = ['connection_1.vxy.12345.containment_alarm']
+    usage_function = false
+    units = false
+    [[Location_C.harmful_gas_sensor]]
+    name = 'harmful_gas_sensor'
+    tags = ['connection_1.vxy.12345.harmful_gas_sensor']
+    usage_function = false
+    units = false
+    [[Location_C.inlet_flowrate]]
+    name = 'inlet'
+    dash_name = ['Inlet 1', 'Inlet 2']
+    tags =  ['connection_1.vxy.12345:inlet_1_flowrate','connection_1.vxy.00472206:inlet_2_flowrate']
+    usage_function = 'flow_based' 
+    units = 'scfm'
+    [[Location_C.inlet_pressure]]
+    name = ['Inlet 1', 'Inlet 2']
+    tags = ['connection_1.vxy.12345:inlet_1_pressure','connection_1.vxy.00471915:inlet_2_pressure']
+    usage_function = false 
+    units = 'psig'
+    [[Location_C.fuel_flowrate]]
+    name = 'fuel'
+    tags = ['connection_1.vxy.12345:fuel_flowrate']
+    usage_function = 'flow_based' 
+    units = 'scfm'
+    [[Location_C.discharge_flowrate]]
+    name = 'discharge'
+    tags = ['connection_1.vxy.12345:discharge_flowrate']
+    usage_function = 'flow_based' 
+    units = 'scfm'
+    [[Location_C.liquid_product_flowrate]]
+    name = 'liquid_product_flowrate'
+    tags = ['connection_1.vxy.12345:liquid_product_flowrate']
+    usage_function = 'flow_based' 
+    units = 'gpm'
+    [[Location_C.product_tank_vol]]
+    name = 'product_tank_vol'
+    tags = ['connection_1.vxy.12345:product_tank_1_vol', 'connection_1.vxy.12345:product_tank_2_vol']
+    usage_function = 'level_based' 
+    units = 'gal'
+    [[Location_C.water_tank_vol]]
+    name = 'water_tank_vol'
+    tags = ['connection_1.vxy.12345:water_tank_1_vol', 'connection_1.vxy.12345:water_tank_2_vol']
+    usage_function = 'level_based' 
+    units = 'gal'
+    [[Location_C.chemical_a]]
+    name = 'chemical_a'
+    tags = ['connection_1.vxy.12345:chemical_a_tank_1', 'connection_1.vxy.12345:chemical_a_tank_2']
+    usage_function = 'level_based'
+    units = 'gal' 
+    [[Location_C.chemical_b]]
+    name = 'chemical_b'
+    tags = ['connection_1.vxy.12345:chemical_b_tank_1', 'connection_1.vxy.12345:chemical_b_tank_2']
+    usage_function = 'level_based'
+    units = 'gal' 
+    [[Location_C.chemical_c]]
+    name = 'chemical_c'
+    tags = ['connection_1.vxy.12345:chemical_c_tank_1']
+    usage_function = 'level_based'
+    units = 'gal' 
+    [[Location_C.chemical_d]]
+    name = 'chemical_d'
+    tags = ['connection_1.vxy.12345:chemical_d_tank_1']
+    usage_function = 'level_based'
+    units = 'gal' 
+    [[Location_C.chemical_e]]
+    name = 'chemical_e'
+    tags = ['connection_1.vxy.12345:chemical_e_tank_1']
+    usage_function = 'level_based'
+    units = 'gal' 
+[Location_D]
+    name = 'Location_D'
+    trucked = 'NO'
+    [[Location_D.connection_args]]
+    type = 'DATABASE_A'
+    which = 'connection_1'
+    [[Location_D.location]]
+    designation = 'LOWER'
+    area = 'Unit 4'
+    [[Location_D.containment_alarm]]
+    name = 'containment_alarm'
+    tags = ['connection_1.vxy.12345.containment_alarm']
+    usage_function = false
+    units = false
+    [[Location_D.harmful_gas_sensor]]
+    name = 'harmful_gas_sensor'
+    tags = ['connection_1.vxy.12345.harmful_gas_sensor']
+    usage_function = false
+    units = false
+    [[Location_D.inlet_flowrate]]
+    name = 'inlet'
+    dash_name = ['Inlet 1', 'Inlet 2']
+    tags =  ['connection_1.vxy.12345:inlet_1_flowrate','connection_1.vxy.00472206:inlet_2_flowrate']
+    usage_function = 'flow_based' 
+    units = 'scfm'
+    [[Location_D.inlet_pressure]]
+    name = ['Inlet 1', 'Inlet 2']
+    tags = ['connection_1.vxy.12345:inlet_1_pressure','connection_1.vxy.00471915:inlet_2_pressure']
+    usage_function = false 
+    units = 'psig'
+    [[Location_D.fuel_flowrate]]
+    name = 'fuel'
+    tags = ['connection_1.vxy.12345:fuel_flowrate']
+    usage_function = 'flow_based' 
+    units = 'scfm'
+    [[Location_D.discharge_flowrate]]
+    name = 'discharge'
+    tags = ['connection_1.vxy.12345:discharge_flowrate']
+    usage_function = 'flow_based' 
+    units = 'scfm'
+    [[Location_D.liquid_product_flowrate]]
+    name = 'liquid_product_flowrate'
+    tags = ['connection_1.vxy.12345:liquid_product_flowrate']
+    usage_function = 'flow_based' 
+    units = 'gpm'
+    [[Location_D.product_tank_vol]]
+    name = 'product_tank_vol'
+    tags = ['connection_1.vxy.12345:product_tank_1_vol', 'connection_1.vxy.12345:product_tank_2_vol']
+    usage_function = 'level_based' 
+    units = 'gal'
+    [[Location_D.water_tank_vol]]
+    name = 'water_tank_vol'
+    tags = ['connection_1.vxy.12345:water_tank_1_vol', 'connection_1.vxy.12345:water_tank_2_vol']
+    usage_function = 'level_based' 
+    units = 'gal'
+    [[Location_D.chemical_a]]
+    name = 'chemical_a'
+    tags = ['connection_1.vxy.12345:chemical_a_tank_1', 'connection_1.vxy.12345:chemical_a_tank_2']
+    usage_function = 'level_based'
+    units = 'gal' 
+    [[Location_D.chemical_b]]
+    name = 'chemical_b'
+    tags = ['connection_1.vxy.12345:chemical_b_tank_1', 'connection_1.vxy.12345:chemical_b_tank_2']
+    usage_function = 'level_based'
+    units = 'gal' 
+    [[Location_D.chemical_c]]
+    name = 'chemical_c'
+    tags = ['connection_1.vxy.12345:chemical_c_tank_1']
+    usage_function = 'level_based'
+    units = 'gal' 
+    [[Location_D.chemical_d]]
+    name = 'chemical_d'
+    tags = ['connection_1.vxy.12345:chemical_d_tank_1']
+    usage_function = 'level_based'
+    units = 'gal' 
+    [[Location_D.chemical_e]]
+    name = 'chemical_e'
+    tags = ['connection_1.vxy.12345:chemical_e_tank_1']
+    usage_function = 'level_based'
+    units = 'gal' 
+[Location_E]
+    name = 'Location_E'
+    trucked = 'NO'
+    [[Location_E.connection_args]]
+    type = 'DATABASE_A'
+    which = 'connection_1'
+    [[Location_E.location]]
+    designation = 'LOWER'
+    area = 'Unit 3'
+    [[Location_E.containment_alarm]]
+    name = 'containment_alarm'
+    tags = ['connection_1.vxy.12345.containment_alarm']
+    usage_function = false
+    units = false
+    [[Location_E.harmful_gas_sensor]]
+    name = 'harmful_gas_sensor'
+    tags = ['connection_1.vxy.12345.harmful_gas_sensor']
+    usage_function = false
+    units = false
+    [[Location_E.inlet_flowrate]]
+    name = 'inlet'
+    dash_name = ['Inlet 1', 'Inlet 2']
+    tags =  ['connection_1.vxy.12345:inlet_1_flowrate','connection_1.vxy.00472206:inlet_2_flowrate']
+    usage_function = 'flow_based' 
+    units = 'scfm'
+    [[Location_E.inlet_pressure]]
+    name = ['Inlet 1', 'Inlet 2']
+    tags = ['connection_1.vxy.12345:inlet_1_pressure','connection_1.vxy.00471915:inlet_2_pressure']
+    usage_function = false 
+    units = 'psig'
+    [[Location_E.fuel_flowrate]]
+    name = 'fuel'
+    tags = ['connection_1.vxy.12345:fuel_flowrate']
+    usage_function = 'flow_based' 
+    units = 'scfm'
+    [[Location_E.discharge_flowrate]]
+    name = 'discharge'
+    tags = ['connection_1.vxy.12345:discharge_flowrate']
+    usage_function = 'flow_based' 
+    units = 'scfm'
+    [[Location_E.liquid_product_flowrate]]
+    name = 'liquid_product_flowrate'
+    tags = ['connection_1.vxy.12345:liquid_product_flowrate']
+    usage_function = 'flow_based' 
+    units = 'gpm'
+    [[Location_E.product_tank_vol]]
+    name = 'product_tank_vol'
+    tags = ['connection_1.vxy.12345:product_tank_1_vol', 'connection_1.vxy.12345:product_tank_2_vol']
+    usage_function = 'level_based' 
+    units = 'gal'
+    [[Location_E.water_tank_vol]]
+    name = 'water_tank_vol'
+    tags = ['connection_1.vxy.12345:water_tank_1_vol', 'connection_1.vxy.12345:water_tank_2_vol']
+    usage_function = 'level_based' 
+    units = 'gal'
+    [[Location_E.chemical_a]]
+    name = 'chemical_a'
+    tags = ['connection_1.vxy.12345:chemical_a_tank_1', 'connection_1.vxy.12345:chemical_a_tank_2']
+    usage_function = 'level_based'
+    units = 'gal' 
+    [[Location_E.chemical_b]]
+    name = 'chemical_b'
+    tags = ['connection_1.vxy.12345:chemical_b_tank_1', 'connection_1.vxy.12345:chemical_b_tank_2']
+    usage_function = 'level_based'
+    units = 'gal' 
+    [[Location_E.chemical_c]]
+    name = 'chemical_c'
+    tags = ['connection_1.vxy.12345:chemical_c_tank_1']
+    usage_function = 'level_based'
+    units = 'gal' 
+    [[Location_E.chemical_d]]
+    name = 'chemical_d'
+    tags = ['connection_1.vxy.12345:chemical_d_tank_1']
+    usage_function = 'level_based'
+    units = 'gal' 
+    [[Location_E.chemical_e]]
+    name = 'chemical_e'
+    tags = ['connection_1.vxy.12345:chemical_e_tank_1']
+    usage_function = 'level_based'
+    units = 'gal' 
+[Location_F]
+    name = 'Location_F'
+    trucked = 'YES'
+    [[Location_F.connection_args]]
+    type = 'DATABASE_C'
+    which = 'connection_2'
+    [[Location_F.location]]
+    designation = 'LOWER'
+    area = 'Unit 8'
+    [[Location_F.containment_alarm]]
+    name = 'containment_alarm'
+    tags = ['TAG2101']
+    usage_function = false
+    units = false
+    [[Location_F.harmful_gas_sensor]]
+    name = 'harmful_gas_sensor'
+    tags = ['TAG2102']
+    usage_function = false
+    units = false
+    [[Location_F.inlet_flowrate]]
+    name = 'inlet'
+    dash_name = ['Inlet 1', 'Inlet 2']
+    tags =  ['TAG1101','TAG1102']
+    usage_function = 'flow_based' 
+    units = 'scfm'
+    [[Location_F.inlet_pressure]]
+    name = ['Inlet 1', 'Inlet 2']
+    tags = ['TAG3101','TAG3102']
+    usage_function = false 
+    units = 'psig'
+    [[Location_F.fuel_flowrate]]
+    name = 'fuel'
+    tags = ['TAG1103']
+    usage_function = 'flow_based' 
+    units = 'scfm'
+    [[Location_F.discharge_flowrate]]
+    name = 'discharge'
+    tags = ['TAG1104']
+    usage_function = 'flow_based' 
+    units = 'scfm'
+    [[Location_F.liquid_product_flowrate]]
+    name = 'liquid_product_flowrate'
+    tags = ['TAG5101']
+    usage_function = 'flow_based' 
+    units = 'gpm'
+    [[Location_F.product_tank_vol]]
+    name = 'product_tank_vol'
+    tags = ['TAG6101', 'TAG6102']
+    usage_function = 'level_based' 
+    units = 'gal'
+    [[Location_F.water_tank_vol]]
+    name = 'water_tank_vol'
+    tags = ['TAG6103', 'TAG6104']
+    usage_function = 'level_based' 
+    units = 'gal'
+    [[Location_F.chemical_a]]
+    name = 'chemical_a'
+    tags = ['TAG7101', 'TAG7102']
+    usage_function = 'level_based'
+    units = 'gal' 
+    [[Location_F.chemical_b]]
+    name = 'chemical_b'
+    tags = ['TAG7103', 'TAG7104']
+    usage_function = 'level_based'
+    units = 'gal' 
+    [[Location_F.chemical_c]]
+    name = 'chemical_c'
+    tags = ['TAG7105']
+    usage_function = 'level_based'
+    units = 'gal' 
+    [[Location_F.chemical_d]]
+    name = 'chemical_d'
+    tags = ['TAG7106']
+    usage_function = 'level_based'
+    units = 'gal' 
+    [[Location_F.chemical_e]]
+    name = 'chemical_e'
+    tags = ['TAG7107']
+    usage_function = 'level_based'
+    units = 'gal' 
+[Location_G]
+    name = 'Location_G'
+    trucked = 'NO'
+    [[Location_G.connection_args]]
+    type = 'DATABASE_D'
+    which = 'connection_2'
+    [[Location_G.location]]
+    designation = 'UPPER'
+    area = 'Unit 7'
+    [[Location_G.containment_alarm]]
+    name = 'containment_alarm'
+    tags = ['TAG2101']
+    usage_function = false
+    units = false
+    [[Location_G.harmful_gas_sensor]]
+    name = 'harmful_gas_sensor'
+    tags = ['TAG2102']
+    usage_function = false
+    units = false
+    [[Location_G.inlet_flowrate]]
+    name = 'inlet'
+    dash_name = ['Inlet 1', 'Inlet 2']
+    tags =  ['TAG1101','TAG1102']
+    usage_function = 'flow_based' 
+    units = 'scfm'
+    [[Location_G.inlet_pressure]]
+    name = ['Inlet 1', 'Inlet 2']
+    tags = ['TAG3101','TAG3102']
+    usage_function = false 
+    units = 'psig'
+    [[Location_G.fuel_flowrate]]
+    name = 'fuel'
+    tags = ['TAG1103']
+    usage_function = 'flow_based' 
+    units = 'scfm'
+    [[Location_G.discharge_flowrate]]
+    name = 'discharge'
+    tags = ['TAG1104']
+    usage_function = 'flow_based' 
+    units = 'scfm'
+    [[Location_G.liquid_product_flowrate]]
+    name = 'liquid_product_flowrate'
+    tags = ['TAG5101']
+    usage_function = 'flow_based' 
+    units = 'gpm'
+    [[Location_G.product_tank_vol]]
+    name = 'product_tank_vol'
+    tags = ['TAG6101', 'TAG6102']
+    usage_function = 'level_based' 
+    units = 'gal'
+    [[Location_G.water_tank_vol]]
+    name = 'water_tank_vol'
+    tags = ['TAG6103', 'TAG6104']
+    usage_function = 'level_based' 
+    units = 'gal'
+    [[Location_G.chemical_a]]
+    name = 'chemical_a'
+    tags = ['TAG7101', 'TAG7102']
+    usage_function = 'level_based'
+    units = 'gal' 
+    [[Location_G.chemical_b]]
+    name = 'chemical_b'
+    tags = ['TAG7103', 'TAG7104']
+    usage_function = 'level_based'
+    units = 'gal' 
+    [[Location_G.chemical_c]]
+    name = 'chemical_c'
+    tags = ['TAG7105']
+    usage_function = 'level_based'
+    units = 'gal' 
+    [[Location_G.chemical_d]]
+    name = 'chemical_d'
+    tags = ['TAG7106']
+    usage_function = 'level_based'
+    units = 'gal' 
+    [[Location_G.chemical_e]]
+    name = 'chemical_e'
+    tags = ['TAG7107']
+    usage_function = 'level_based'
+    units = 'gal' 
+[Location_H]
+    name = 'Location_H'
+    trucked = 'NO'
+    [[Location_H.connection_args]]
+    type = 'DATABASE_E'
+    which = 'connection_2'
+    [[Location_H.location]]
+    designation = 'UPPER'
+    area = 'Unit 1'
+    [[Location_H.containment_alarm]]
+    name = 'containment_alarm'
+    tags = ['TAG2101']
+    usage_function = false
+    units = false
+    [[Location_H.harmful_gas_sensor]]
+    name = 'harmful_gas_sensor'
+    tags = ['TAG2102']
+    usage_function = false
+    units = false
+    [[Location_H.inlet_flowrate]]
+    name = 'inlet'
+    dash_name = ['Inlet 1', 'Inlet 2']
+    tags =  ['TAG1101','TAG1102']
+    usage_function = 'flow_based' 
+    units = 'scfm'
+    [[Location_H.inlet_pressure]]
+    name = ['Inlet 1', 'Inlet 2']
+    tags = ['TAG3101','TAG3102']
+    usage_function = false 
+    units = 'psig'
+    [[Location_H.fuel_flowrate]]
+    name = 'fuel'
+    tags = ['TAG1103']
+    usage_function = 'flow_based' 
+    units = 'scfm'
+    [[Location_H.discharge_flowrate]]
+    name = 'discharge'
+    tags = ['TAG1104']
+    usage_function = 'flow_based' 
+    units = 'scfm'
+    [[Location_H.liquid_product_flowrate]]
+    name = 'liquid_product_flowrate'
+    tags = ['TAG5101']
+    usage_function = 'flow_based' 
+    units = 'gpm'
+    [[Location_H.product_tank_vol]]
+    name = 'product_tank_vol'
+    tags = ['TAG6101', 'TAG6102']
+    usage_function = 'level_based' 
+    units = 'gal'
+    [[Location_H.water_tank_vol]]
+    name = 'water_tank_vol'
+    tags = ['TAG6103', 'TAG6104']
+    usage_function = 'level_based' 
+    units = 'gal'
+    [[Location_H.chemical_a]]
+    name = 'chemical_a'
+    tags = ['TAG7101', 'TAG7102']
+    usage_function = 'level_based'
+    units = 'gal' 
+    [[Location_H.chemical_b]]
+    name = 'chemical_b'
+    tags = ['TAG7103', 'TAG7104']
+    usage_function = 'level_based'
+    units = 'gal' 
+    [[Location_H.chemical_c]]
+    name = 'chemical_c'
+    tags = ['TAG7105']
+    usage_function = 'level_based'
+    units = 'gal' 
+    [[Location_H.chemical_d]]
+    name = 'chemical_d'
+    tags = ['TAG7106']
+    usage_function = 'level_based'
+    units = 'gal' 
+    [[Location_H.chemical_e]]
+    name = 'chemical_e'
+    tags = ['TAG7107']
+    usage_function = 'level_based'
+    units = 'gal' 
+[Location_I]
+    name = 'Location_I'
+    trucked = 'YES'
+    [[Location_I.connection_args]]
+    type = 'DATABASE_F'
+    which = 'connection_2'
+    [[Location_I.location]]
+    designation = 'LOWER'
+    area = 'Unit 6'
+    [[Location_I.containment_alarm]]
+    name = 'containment_alarm'
+    tags = ['TAG2101']
+    usage_function = false
+    units = false
+    [[Location_I.harmful_gas_sensor]]
+    name = 'harmful_gas_sensor'
+    tags = ['TAG2102']
+    usage_function = false
+    units = false
+    [[Location_I.inlet_flowrate]]
+    name = 'inlet'
+    dash_name = ['Inlet 1', 'Inlet 2']
+    tags =  ['TAG1101','TAG1102']
+    usage_function = 'flow_based' 
+    units = 'scfm'
+    [[Location_I.inlet_pressure]]
+    name = ['Inlet 1', 'Inlet 2']
+    tags = ['TAG3101','TAG3102']
+    usage_function = false 
+    units = 'psig'
+    [[Location_I.fuel_flowrate]]
+    name = 'fuel'
+    tags = ['TAG1103']
+    usage_function = 'flow_based' 
+    units = 'scfm'
+    [[Location_I.discharge_flowrate]]
+    name = 'discharge'
+    tags = ['TAG1104']
+    usage_function = 'flow_based' 
+    units = 'scfm'
+    [[Location_I.liquid_product_flowrate]]
+    name = 'liquid_product_flowrate'
+    tags = ['TAG5101']
+    usage_function = 'flow_based' 
+    units = 'gpm'
+    [[Location_I.product_tank_vol]]
+    name = 'product_tank_vol'
+    tags = ['TAG6101', 'TAG6102']
+    usage_function = 'level_based' 
+    units = 'gal'
+    [[Location_I.water_tank_vol]]
+    name = 'water_tank_vol'
+    tags = ['TAG6103', 'TAG6104']
+    usage_function = 'level_based' 
+    units = 'gal'
+    [[Location_I.chemical_a]]
+    name = 'chemical_a'
+    tags = ['TAG7101', 'TAG7102']
+    usage_function = 'level_based'
+    units = 'gal' 
+    [[Location_I.chemical_b]]
+    name = 'chemical_b'
+    tags = ['TAG7103', 'TAG7104']
+    usage_function = 'level_based'
+    units = 'gal' 
+    [[Location_I.chemical_c]]
+    name = 'chemical_c'
+    tags = ['TAG7105']
+    usage_function = 'level_based'
+    units = 'gal' 
+    [[Location_I.chemical_d]]
+    name = 'chemical_d'
+    tags = ['TAG7106']
+    usage_function = 'level_based'
+    units = 'gal' 
+    [[Location_I.chemical_e]]
+    name = 'chemical_e'
+    tags = ['TAG7107']
+    usage_function = 'level_based'
+    units = 'gal' 

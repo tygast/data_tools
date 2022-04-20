@@ -1,0 +1,6 @@
+include LICENSE readme.md requirements.txt MANIFEST.in
+include src/tools/configs/
+recursive-include src/tools *.py *.txt *.bat *.toml
+recursive-include docs *.md *.rst *.txt
+global-exclude *.pyc
+global-exclude __pycache__
